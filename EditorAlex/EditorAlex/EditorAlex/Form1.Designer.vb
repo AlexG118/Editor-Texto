@@ -36,12 +36,12 @@ Partial Class Form1
         Me.CortarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PegarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarTextoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuscarRemplazarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeshacerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RehacerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FuenteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemarcarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BuscarRemplazarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ofd = New System.Windows.Forms.OpenFileDialog()
         Me.sfd = New System.Windows.Forms.SaveFileDialog()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -75,8 +75,9 @@ Partial Class Form1
         Me.NuevoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.NuevoToolStripMenuItem.Image = CType(resources.GetObject("NuevoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-1"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.NuevoToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.NuevoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D1), System.Windows.Forms.Keys)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.NuevoToolStripMenuItem.Text = "Nueva Pestaña"
         '
         'CerrarPestañaToolStripMenuItem
@@ -84,8 +85,9 @@ Partial Class Form1
         Me.CerrarPestañaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.CerrarPestañaToolStripMenuItem.Image = CType(resources.GetObject("CerrarPestañaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CerrarPestañaToolStripMenuItem.Name = "CerrarPestañaToolStripMenuItem"
-        Me.CerrarPestañaToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-2"
-        Me.CerrarPestañaToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.CerrarPestañaToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.CerrarPestañaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D2), System.Windows.Forms.Keys)
+        Me.CerrarPestañaToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.CerrarPestañaToolStripMenuItem.Text = "Cerrar Pestaña"
         '
         'AbrirToolStripMenuItem
@@ -93,8 +95,10 @@ Partial Class Form1
         Me.AbrirToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.AbrirToolStripMenuItem.Image = CType(resources.GetObject("AbrirToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
-        Me.AbrirToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-3"
-        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.AbrirToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.AbrirToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+                    Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
+        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.AbrirToolStripMenuItem.Text = "Abrir"
         '
         'GrabarToolStripMenuItem
@@ -102,8 +106,10 @@ Partial Class Form1
         Me.GrabarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GrabarToolStripMenuItem.Image = CType(resources.GetObject("GrabarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.GrabarToolStripMenuItem.Name = "GrabarToolStripMenuItem"
-        Me.GrabarToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-Shift-S"
-        Me.GrabarToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.GrabarToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.GrabarToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+                    Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.GrabarToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.GrabarToolStripMenuItem.Text = "Guardar"
         '
         'GrabarComoToolStripMenuItem
@@ -111,7 +117,7 @@ Partial Class Form1
         Me.GrabarComoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GrabarComoToolStripMenuItem.Image = CType(resources.GetObject("GrabarComoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.GrabarComoToolStripMenuItem.Name = "GrabarComoToolStripMenuItem"
-        Me.GrabarComoToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.GrabarComoToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.GrabarComoToolStripMenuItem.Text = "Guardar como"
         '
         'SalirToolStripMenuItem
@@ -119,7 +125,9 @@ Partial Class Form1
         Me.SalirToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.SalirToolStripMenuItem.Image = CType(resources.GetObject("SalirToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.SalirToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+                    Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EditarToolStripMenuItem
@@ -135,8 +143,9 @@ Partial Class Form1
         Me.CopiarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.CopiarToolStripMenuItem.Image = CType(resources.GetObject("CopiarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CopiarToolStripMenuItem.Name = "CopiarToolStripMenuItem"
-        Me.CopiarToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-C"
-        Me.CopiarToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.CopiarToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.CopiarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
+        Me.CopiarToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.CopiarToolStripMenuItem.Text = "Copiar"
         '
         'CortarToolStripMenuItem
@@ -144,8 +153,9 @@ Partial Class Form1
         Me.CortarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.CortarToolStripMenuItem.Image = CType(resources.GetObject("CortarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CortarToolStripMenuItem.Name = "CortarToolStripMenuItem"
-        Me.CortarToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-X"
-        Me.CortarToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.CortarToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.CortarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.CortarToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.CortarToolStripMenuItem.Text = "Cortar"
         '
         'PegarToolStripMenuItem
@@ -153,8 +163,9 @@ Partial Class Form1
         Me.PegarToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.PegarToolStripMenuItem.Image = CType(resources.GetObject("PegarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.PegarToolStripMenuItem.Name = "PegarToolStripMenuItem"
-        Me.PegarToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-V"
-        Me.PegarToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.PegarToolStripMenuItem.ShortcutKeyDisplayString = ""
+        Me.PegarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
+        Me.PegarToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.PegarToolStripMenuItem.Text = "Pegar"
         '
         'BorrarTextoToolStripMenuItem
@@ -163,21 +174,16 @@ Partial Class Form1
         Me.BorrarTextoToolStripMenuItem.Image = CType(resources.GetObject("BorrarTextoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.BorrarTextoToolStripMenuItem.Name = "BorrarTextoToolStripMenuItem"
         Me.BorrarTextoToolStripMenuItem.ShortcutKeyDisplayString = ""
-        Me.BorrarTextoToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.BorrarTextoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.B), System.Windows.Forms.Keys)
+        Me.BorrarTextoToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
         Me.BorrarTextoToolStripMenuItem.Text = "Borrar texto"
-        '
-        'BuscarRemplazarToolStripMenuItem
-        '
-        Me.BuscarRemplazarToolStripMenuItem.Image = CType(resources.GetObject("BuscarRemplazarToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BuscarRemplazarToolStripMenuItem.Name = "BuscarRemplazarToolStripMenuItem"
-        Me.BuscarRemplazarToolStripMenuItem.Size = New System.Drawing.Size(136, 20)
-        Me.BuscarRemplazarToolStripMenuItem.Text = "Buscar/Reemplazar"
         '
         'DeshacerToolStripMenuItem
         '
         Me.DeshacerToolStripMenuItem.Image = CType(resources.GetObject("DeshacerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.DeshacerToolStripMenuItem.Name = "DeshacerToolStripMenuItem"
         Me.DeshacerToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-Z"
+        Me.DeshacerToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
         Me.DeshacerToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
         Me.DeshacerToolStripMenuItem.Text = "Deshacer"
         '
@@ -186,6 +192,7 @@ Partial Class Form1
         Me.RehacerToolStripMenuItem.Image = CType(resources.GetObject("RehacerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.RehacerToolStripMenuItem.Name = "RehacerToolStripMenuItem"
         Me.RehacerToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl-Y"
+        Me.RehacerToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y), System.Windows.Forms.Keys)
         Me.RehacerToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.RehacerToolStripMenuItem.Text = "Rehacer"
         '
@@ -209,6 +216,15 @@ Partial Class Form1
         Me.RemarcarToolStripMenuItem.Name = "RemarcarToolStripMenuItem"
         Me.RemarcarToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
         Me.RemarcarToolStripMenuItem.Text = "Remarcar"
+        '
+        'BuscarRemplazarToolStripMenuItem
+        '
+        Me.BuscarRemplazarToolStripMenuItem.Image = CType(resources.GetObject("BuscarRemplazarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.BuscarRemplazarToolStripMenuItem.Name = "BuscarRemplazarToolStripMenuItem"
+        Me.BuscarRemplazarToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+                    Or System.Windows.Forms.Keys.B), System.Windows.Forms.Keys)
+        Me.BuscarRemplazarToolStripMenuItem.Size = New System.Drawing.Size(136, 20)
+        Me.BuscarRemplazarToolStripMenuItem.Text = "Buscar/Reemplazar"
         '
         'ofd
         '
